@@ -83,7 +83,7 @@ class CarInterface(CarInterfaceBase):
 
 
 
-    tire_stiffness_factor = 0.45
+    tire_stiffness_factor = 0.48
 
     ret.minSteerSpeed = 11 * CV.KPH_TO_MS
     ret.steerRateCost = 0.3625 # def : 2.0

@@ -92,7 +92,7 @@ class CarInterface(CarInterfaceBase):
     ret.minEnableSpeed = -1
     ret.mass = 1625. + STD_CARGO_KG
     ret.wheelbase = 2.60096
-    ret.steerRatio = 16.90  # 조향 힘 반응속도
+    ret.steerRatio = 17.4  # 조향 힘 반응속도
     ret.steerRatioRear = 0.
     ret.centerToFront = ret.wheelbase * 0.49 # wild guess
     ret.disableLateralLiveTuning = True

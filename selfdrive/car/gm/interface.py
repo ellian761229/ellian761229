@@ -83,10 +83,10 @@ class CarInterface(CarInterfaceBase):
 
 
 
-    tire_stiffness_factor = 0.48
+    tire_stiffness_factor = 0.5
 
     ret.minSteerSpeed = 11 * CV.KPH_TO_MS
-    ret.steerRateCost = 0.3625 # def : 2.0
+    ret.steerRateCost = 0.35 # def : 2.0
     ret.steerActuatorDelay = 0.133  # 조향 커브 미리 반응속도
 
     ret.minEnableSpeed = -1
@@ -127,11 +127,11 @@ class CarInterface(CarInterfaceBase):
       max_lat_accel = 3.16   # 조향 와리가리 조정
       ret.lateralTuning.torque.kp = 2.0 / max_lat_accel
       ret.lateralTuning.torque.kf = 1.0 / max_lat_accel
-      ret.lateralTuning.torque.ki = 0.4 / max_lat_accel
-      ret.lateralTuning.torque.friction = 0.0
+      ret.lateralTuning.torque.ki = 0.2 / max_lat_accel
+      ret.lateralTuning.torque.friction = 0.02
 
-      ret.lateralTuning.torque.kd = 0.0
-      ret.lateralTuning.torque.deadzone = 0.0
+      ret.lateralTuning.torque.kd = 1.0
+      ret.lateralTuning.torque.deadzone = 0.01
 
 
     # TODO: get actual value, for now starting with reasonable value for
